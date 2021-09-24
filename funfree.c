@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * Funfree - Function to function to free
+ * funfree - Function to function to free
  * Return - Nothing, Function void
  */
 void funfree(void)
