@@ -9,7 +9,7 @@ void push(char *num)
 	if (num == NULL)
 	{
 		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", var.lineNum);
-		Funfree();
+		funfree();
 		exit(EXIT_FAILURE);
 	}
 
@@ -30,7 +30,7 @@ void Value_push(int elm)
 	if (!new)
 	{
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");
-		Funfree();
+		funfree();
 		exit(EXIT_FAILURE);
 	}
 
@@ -79,7 +79,7 @@ void ValueDigit(char *num)
 		{
 			dprintf(STDERR_FILENO, "L%u: usage: push integer\n",
 					var.lineNum);
-			Funfree();
+			funfree();
 			exit(EXIT_FAILURE);
 		}
 	}

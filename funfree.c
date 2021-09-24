@@ -1,4 +1,3 @@
-
 #include "monty.h"
 
 var_t var;
@@ -6,7 +5,7 @@ var_t var;
  * Funfree - Function to function to free
  * Return - Nothing, Function void
  */
-void Funfree(void)
+void funfree(void)
 {
 	stack_t *item;
 

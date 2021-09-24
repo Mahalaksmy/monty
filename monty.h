@@ -57,11 +57,12 @@ extern var_t var;
 
 void _printerr(char *c);
 void openfile(char *name);
-void process(void);
+void fungetline(void);
 void push(char *num);
 void pall(stack_t **stack, unsigned int lineNum);
 void runopcode(char *opcode, unsigned int lineNum);
-void Funfree(void);
+void funfree(void);
+void funopcodes(char *opcode, unsigned int lineNum);
 void ValueDigit(char *num);
 void Value_push(int elm);
 void pint(stack_t **stack, unsigned int lineNum);
