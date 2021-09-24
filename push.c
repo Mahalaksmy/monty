@@ -44,7 +44,7 @@ void Value_push(int elm)
 	}
 	else
 	{
-		if (var.isStack)
+		if (var.nstack)
 		{
 			new->next = var.stack;
 			new->prev = NULL;

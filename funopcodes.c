@@ -1,8 +1,8 @@
 #include "monty.h"
 
-var_t var;
 /**
- * funopcodes - function that validates and compares the commands, by entering each function.
+ * funopcodes - function that validates and compares the commands,
+ * by entering each function.
  * @opcode: The opcode to run
  * @lineNum: The line number the opcode
  *  * Return - Nothing, Function void

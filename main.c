@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	var.stack = NULL;
 	var.line = NULL;
-	var.isStack = 1;
+	var.nstack = 1;
 
 	if (argc != 2)
 	{

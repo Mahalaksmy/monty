@@ -1,6 +1,5 @@
 #include "monty.h"
 
-var_t var;
 /**
  * Funfree - Function to function to free
  * Return - Nothing, Function void

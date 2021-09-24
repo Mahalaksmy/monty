@@ -38,11 +38,12 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
- * struct gvar_s - container for globally used variables
+ * struct var_s - container for globally used variables
  * @file: The monty file being read
- * @lineNum: The current line number being read
+ * @lineNum: Number line
  * @stack: The stack being used
- * @line: The current line being read
+ * @line: The current line
+ * @nstack: Variable type char
  */
 typedef struct var_s
 {
@@ -50,7 +51,7 @@ typedef struct var_s
 	unsigned int lineNum;
 	stack_t *stack;
 	char *line;
-	char isStack;
+	char nstack;
 } var_t;
 
 extern var_t var;
