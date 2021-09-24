@@ -67,5 +67,6 @@ void funopcodes(char *opcode, unsigned int lineNum);
 void ValueDigit(char *num);
 void Value_push(int elm);
 void pint(stack_t **stack, unsigned int lineNum);
+void pop(stack_t **elm, unsigned int num);
 
 #endif /*  _MONTY_H_ */
