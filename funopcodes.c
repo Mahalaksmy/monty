@@ -12,6 +12,7 @@ void funopcodes(char *opcode, unsigned int lineNum)
 	unsigned int i;
 
 	instruction_t opcodes[] = {
+		{"push", push},
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
