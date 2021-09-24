@@ -7,18 +7,19 @@
  */
 void swap(stack_t **head, unsigned int num)
 {
-	stack_t *list = *head;
-	int tmp;
+	stack_t *list;
 
-	if (var.funlen < 2)
+	if (!*head || !(*head)->next)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't swap, stack too short\n", num);
+		dprintf(STDERR_FILENO, "L%u: can't swap, stack too short\n", num);
 		funfree();
 		exit(EXIT_FAILURE);
 	}
 
-	tmp = list->n;
-	list->n = list->next->n;
-	list->next->n = tmp;
-
+	list = (*head)->next;
+	(*head)->next = list->next;
+	list->next = (*head);
+	(*head)->prev = list;
+	list->prev = NULL;
+	*head = list;
 }
