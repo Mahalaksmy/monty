@@ -15,6 +15,7 @@ void funopcodes(char *opcode, unsigned int lineNum)
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
+		{"add", add},
 		{NULL, NULL}
 	};
 
