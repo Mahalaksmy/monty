@@ -2,17 +2,17 @@
 /**
  * add - function that adds the  elements.
  * @head: Variable Pointer
- * @num: Number of line.
+ * @num: Number of line
  * Return - Nothing, Function void
  */
 void add(stack_t **head, unsigned int num)
 {
-	int sum;
+	int sum = 0;
 
-	if (*head  != NULL|| !(*head)->next)
+	if (var.funlen < 2)
 	{
-		dprintf(STDERR_FILENO, "L%u: can't add, stack too short\n", num);
-		funfree();
+		dprintf(STDOUT_FILENO,
+			"L%u: can't add, stack too short\n",num);
 		exit(EXIT_FAILURE);
 	}
 
@@ -20,3 +20,4 @@ void add(stack_t **head, unsigned int num)
 	pop(head, num);
 	(*head)->n = sum;
 }
+

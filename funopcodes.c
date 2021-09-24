@@ -17,6 +17,7 @@ void funopcodes(char *opcode, unsigned int lineNum)
 		{"pop", pop},
 		{"nop", nop},
 		{"add", add},
+		{"swap", swap},
 		{NULL, NULL}
 	};
 

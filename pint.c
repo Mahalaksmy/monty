@@ -3,18 +3,18 @@
 
 /**
  * pint - Prints the int at the top of the stack
- * @stack: Double pointer to the head of the stack
- * @lineNum: The number of the current line being processed
+ * @head: Double pointer to the head of the stack
+ * @num: The number of the current line being processed
  * Return - Nothing, Function void
  */
-void pint(stack_t **stack, unsigned int lineNum)
+void pint(stack_t **head, unsigned int num)
 {
-	if (!*stack)
+	if (*head != NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", lineNum);
+		dprintf(STDERR_FILENO, "L%u: can't pint, stack empty\n", num);
 		funfree();
 		exit(EXIT_FAILURE);
 	}
 
-	printf("%d\n", (*stack)->n);
+	printf("%d\n", (*head)->n);
 }

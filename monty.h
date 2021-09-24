@@ -44,6 +44,7 @@ typedef struct instruction_s
  * @stack: The stack being used
  * @line: The current line
  * @nstack: Variable type char
+ * @funlen: length of the elements 
  */
 typedef struct var_s
 {
@@ -52,6 +53,7 @@ typedef struct var_s
 	stack_t *stack;
 	char *line;
 	char nstack;
+	size_t funlen;
 } var_t;
 
 extern var_t var;
@@ -66,9 +68,10 @@ void funfree(void);
 void funopcodes(char *opcode, unsigned int lineNum);
 void ValueDigit(char *num);
 void Value_push(int elm);
-void pint(stack_t **stack, unsigned int lineNum);
-void pop(stack_t **elm, unsigned int num);
+void pint(stack_t **head, unsigned int num);
+void pop(stack_t **head, unsigned int num);
 void add(stack_t **head, unsigned int num);
 void nop(stack_t **head, unsigned int num);
+void swap(stack_t **head, unsigned int num);
 
 #endif /*  _MONTY_H_ */
