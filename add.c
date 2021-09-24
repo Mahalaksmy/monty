@@ -7,12 +7,12 @@
  */
 void add(stack_t **head, unsigned int num)
 {
-	int sum = 0;
+	int sum;
 
-	if (var.funlen < 2)
+	if (!*head || !(*head)->next)
 	{
-		dprintf(STDOUT_FILENO,
-			"L%u: can't add, stack too short\n",num);
+		dprintf(STDERR_FILENO, "L%u: can't add, stack too short\n", num);
+		funfree();
 		exit(EXIT_FAILURE);
 	}
 
@@ -20,4 +20,3 @@ void add(stack_t **head, unsigned int num)
 	pop(head, num);
 	(*head)->n = sum;
 }
-
