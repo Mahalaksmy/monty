@@ -3,7 +3,7 @@
  * pop - function that removes the top element of the stack.
  * @elm: pointer to the variable
  * @times: Number of line.
- * Return: Nothing it is a void function.
+ * Return: Return - Nothing, Function void
  */
 void pop(stack_t **elm, unsigned int num)
 {

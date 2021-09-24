@@ -3,7 +3,7 @@
  * add - function that adds the  elements.
  * @head: Variable Pointer
  * @num: Number of line.
- * Return: Nothing it is a void function.
+ * Return - Nothing, Function void
  */
 void add(stack_t **head, unsigned int num)
 {

@@ -69,5 +69,6 @@ void Value_push(int elm);
 void pint(stack_t **stack, unsigned int lineNum);
 void pop(stack_t **elm, unsigned int num);
 void add(stack_t **head, unsigned int num);
+void nop(stack_t **head, unsigned int num);
 
 #endif /*  _MONTY_H_ */

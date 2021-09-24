@@ -65,6 +65,7 @@ void Value_push(int elm)
 /**
  * ValueDigit - validate string for umber
  * @num: variable to validate
+ * Return - Nothing, Function void
  */
 void ValueDigit(char *num)
 {

@@ -5,7 +5,7 @@
  * by entering each function.
  * @opcode: The opcode to run
  * @lineNum: The line number the opcode
- *  * Return - Nothing, Function void
+ * Return - Nothing, Function void
  */
 void funopcodes(char *opcode, unsigned int lineNum)
 {
@@ -15,6 +15,7 @@ void funopcodes(char *opcode, unsigned int lineNum)
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
+		{"nop", nop},
 		{"add", add},
 		{NULL, NULL}
 	};
